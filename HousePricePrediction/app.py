@@ -3,10 +3,7 @@ import pandas as pd
 import joblib
 from pathlib import Path
 
-
-
 # Page Configuration
-
 
 st.set_page_config(
     page_title="House Price Prediction",
@@ -14,11 +11,7 @@ st.set_page_config(
     layout="centered"
 )
 
-
-
 # Load Model
-
-
 MODEL_PATH = Path(__file__).parent / "model_SVR.pkl"
 
 try:
@@ -32,7 +25,7 @@ except FileNotFoundError:
 
 
 
-# Title
+# Title of the Project 
 
 st.title("House Price Prediction")
 
